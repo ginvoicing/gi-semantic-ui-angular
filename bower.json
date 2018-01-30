@@ -1,0 +1,25 @@
+{
+  "name": "gi-semantic-ui-angular",
+  "version": "0.1",
+  "homepage": "https://github.com/ginvoicing/gi-semantic-ui-angular",
+  "authors": [
+    "GInvoicing.com <support@ginvoicing.com>"
+  ],
+  "description": "Angular1 Directives for Semantic UI",
+  "main": "angular-semantic-ui.js",
+  "keywords": [
+    "javascript",
+    "semantic-ui",
+    "angular1",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "examples"
+  ]
+}
