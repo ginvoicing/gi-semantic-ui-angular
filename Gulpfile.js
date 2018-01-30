@@ -5,8 +5,8 @@ var sourcemaps = require('gulp-sourcemaps');
 var plugins = require('gulp-load-plugins')();
 var pkg = require('./package.json');
 var src = [
-  'src/sm.js',
-  'src/sm-core.js',
+  'src/gi.js',
+  'src/gi-core.js',
   'src/*/*.js'
 ];
 

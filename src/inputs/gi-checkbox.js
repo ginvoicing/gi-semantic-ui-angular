@@ -3,18 +3,18 @@
 
   app
     .factory('SemanticCheckboxLink', ['SemanticUI', SemanticCheckboxLink])
-    .directive('smCheckboxBind', ['SemanticUI', SemanticCheckboxBind])
-    .directive('smCheckbox', ['SemanticCheckboxLink', SemanticCheckbox])
+    .directive('giCheckboxBind', ['SemanticUI', SemanticCheckboxBind])
+    .directive('giCheckbox', ['SemanticCheckboxLink', SemanticCheckbox])
   ;
 
   var BEHAVIORS = {
-    smCheckboxToggle:            'toggle',
-    smCheckboxCheck:             'check',
-    smCheckboxUncheck:           'uncheck',
-    smCheckboxIndeterminate:     'indeterminate',
-    smCheckboxDeterminate:       'determinate',
-    smCheckboxEnable:            'enable',
-    smCheckboxDisable:           'disable'
+    giCheckboxToggle:            'toggle',
+    giCheckboxCheck:             'check',
+    giCheckboxUncheck:           'uncheck',
+    giCheckboxIndeterminate:     'indeterminate',
+    giCheckboxDeterminate:       'determinate',
+    giCheckboxEnable:            'enable',
+    giCheckboxDisable:           'disable'
   };
 
   angular.forEach( BEHAVIORS, function(method, directive)
@@ -27,7 +27,7 @@
 
   function SemanticCheckboxBind(SemanticUI)
   {
-    return SemanticUI.createBind( 'smCheckboxBind', 'checkbox' );
+    return SemanticUI.createBind( 'giCheckboxBind', 'checkbox' );
   }
 
   function SemanticCheckbox(SemanticCheckboxLink)

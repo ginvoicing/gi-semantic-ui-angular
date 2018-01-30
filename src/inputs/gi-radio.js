@@ -3,14 +3,14 @@
 
   app
     .factory('SemanticRadioLink', ['SemanticUI', SemanticRadioLink])
-    .directive('smRadioBind', ['SemanticUI', SemanticRadioBind])
-    .directive('smRadio', ['SemanticRadioLink', SemanticRadio])
+    .directive('giRadioBind', ['SemanticUI', SemanticRadioBind])
+    .directive('giRadio', ['SemanticRadioLink', SemanticRadio])
   ;
 
   var BEHAVIORS = {
-    smRadioCheck:             'check',
-    smRadioEnable:            'enable',
-    smRadioDisable:           'disable'
+    giRadioCheck:             'check',
+    giRadioEnable:            'enable',
+    giRadioDisable:           'disable'
   };
 
   angular.forEach( BEHAVIORS, function(method, directive)
@@ -23,7 +23,7 @@
 
   function SemanticRadioBind(SemanticUI)
   {
-    return SemanticUI.createBind( 'smRadioBind', 'checkbox' );
+    return SemanticUI.createBind( 'giRadioBind', 'checkbox' );
   }
 
   function SemanticRadio(SemanticRadioLink)

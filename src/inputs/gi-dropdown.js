@@ -4,31 +4,31 @@
   app
     .controller('SemanticDropdownController', ['$scope', SemanticDropdownController])
     .factory('SemanticDropdownLink', ['SemanticUI', '$timeout', SemanticDropdownLink])
-    .directive('smDropdownBind', ['SemanticUI', SemanticDropdownBind])
-    .directive('smDropdown', ['SemanticDropdownLink', SemanticDropdown])
+    .directive('giDropdownBind', ['SemanticUI', SemanticDropdownBind])
+    .directive('giDropdown', ['SemanticDropdownLink', SemanticDropdown])
   ;
 
   var BEHAVIORS = {
-    smDropdownToggle:               'toggle',
-    smDropdownShow:                 'show',
-    smDropdownHide:                 'hide',
-    smDropdownClear:                'clear',
-    smDropdownHideOthers:           'hide others',
-    smDropdownRestoreDefaults:      'restore defaults',
-    smDropdownRestoreDefaultText:   'restore default text',
-    smDropdownRestoreDefaultValue:  'restore default value',
-    smDropdownSaveDefaults:         'save defaults',
-    smDropdownSetSelected:          'set selected',
-    smDropdownSetText:              'set text',
-    smDropdownSetValue:             'set value',
-    smDropdownBindTouchEvents:      'bind touch events',
-    smDropdownMouseEvents:          'mouse events',
-    smDropdownBindIntent:           'bind intent',
-    smDropdownUnbindIntent:         'unbind intent',
-    smDropdownSetActive:            'set active',
-    smDropdownSetVisible:           'set visible',
-    smDropdownRemoveActive:         'remove active',
-    smDropdownRemoveVisible:        'remove visible'
+    giDropdownToggle:               'toggle',
+    giDropdownShow:                 'show',
+    giDropdownHide:                 'hide',
+    giDropdownClear:                'clear',
+    giDropdownHideOthers:           'hide others',
+    giDropdownRestoreDefaults:      'restore defaults',
+    giDropdownRestoreDefaultText:   'restore default text',
+    giDropdownRestoreDefaultValue:  'restore default value',
+    giDropdownSaveDefaults:         'save defaults',
+    giDropdownSetSelected:          'set selected',
+    giDropdownSetText:              'set text',
+    giDropdownSetValue:             'set value',
+    giDropdownBindTouchEvents:      'bind touch events',
+    giDropdownMouseEvents:          'mouse events',
+    giDropdownBindIntent:           'bind intent',
+    giDropdownUnbindIntent:         'unbind intent',
+    giDropdownSetActive:            'set active',
+    giDropdownSetVisible:           'set visible',
+    giDropdownRemoveActive:         'remove active',
+    giDropdownRemoveVisible:        'remove visible'
   };
 
   angular.forEach( BEHAVIORS, function(method, directive)
@@ -41,7 +41,7 @@
 
   function SemanticDropdownBind(SemanticUI)
   {
-    return SemanticUI.createBind( 'smDropdownBind', 'dropdown' );
+    return SemanticUI.createBind( 'giDropdownBind', 'dropdown' );
   }
 
   function SemanticDropdown(SemanticDropdownLink)
